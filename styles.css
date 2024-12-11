@@ -121,19 +121,19 @@ footer {
     background: #e76f51;
 }
 
-.hero img{
+.hero img {
     width: 25%;
-    height: 15%;
+    height: auto;
 }
 
 .features-container {
     color: white;
-    display: flex; 
-    justify-content: space-between; 
-    gap: 2%; 
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
     margin-top: 1%;
     margin-left: 2%;
-    margin-right: 2%; 
+    margin-right: 2%;
 }
 
 .features h3 {
@@ -142,21 +142,21 @@ footer {
 }
 
 .feature {
-    flex: 1; 
-    padding: 20px; 
-    background-color: #e76f51; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    text-align: left; 
+    flex: 1;
+    padding: 20px;
+    background-color: #e76f51;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 .feature h3 {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .feature p {
-    font-size: 1rem; 
-    line-height: 1.5; 
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 /* Over Ons pagina */
@@ -225,4 +225,55 @@ footer {
 .episode-card p {
     font-size: 0.9rem;
     padding: 0 10px 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .features-container {
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 50%;
+    }
+
+    .episode-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .social-media {
+        flex-direction: column;
+    }
+
+    .features-container {
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 70%;
+    }
+
+    .episode-grid {
+        grid-template-columns: 1fr;
+    }
 }
