@@ -4,14 +4,12 @@ body {
     padding: 0;
     line-height: 1.6;
     background: #264653;
-    width: 100%;
 }
 
 header {
     background: teal;
     color: white;
-    padding: 5px 20px;
-    width: 100%;
+    margin: auto;
 }
 
 header h1 {
@@ -24,7 +22,7 @@ header ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    gap: rem;
     flex-grow: 1;
     justify-content: center;
 }
@@ -227,7 +225,7 @@ footer {
     padding: 0 10px 10px;
 }
 
-/* Responsive Design */
+/* Responsive Design
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -249,41 +247,46 @@ footer {
     .episode-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-}
+} */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     nav {
         flex-direction: column;
+    }
+
+    nav img{
         align-items: center;
-        gap: 10px;
     }
 
     header ul {
         flex-direction: column;
-        gap: 5px;
+        gap: 1.2rem;
         align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
     }
 
     .social-media {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        margin-bottom: 1rem;
     }
 
     .features-container {
         flex-direction: column;
-        gap: 10px;
+        gap: 1rem;
         margin-left: 5%;
         margin-right: 5%;
     }
 
     .hero img {
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
+        /* margin: 0 auto; */
     }
 
     .episode-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 1.1rem;
     }
 
     .hero h2, .hero p {
