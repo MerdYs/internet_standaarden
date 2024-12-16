@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: #264653;
+    background: #7bb6ca;
 }
 
 header {
-    background: teal;
+    background: #f29a90;
     color: white;
     margin: auto;
 }
@@ -80,7 +80,7 @@ nav li {
 }
 
 footer {
-    background: teal;
+    background:  #f29a90;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -142,8 +142,8 @@ footer {
 .feature {
     flex: 1;
     padding: 20px;
-    background-color: #e76f51;
-    border-radius: 8px;
+    background-color: #f29a90;
+    border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
@@ -252,6 +252,7 @@ footer {
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
+        text-align: center;
     }
 
     nav img{
@@ -263,7 +264,7 @@ footer {
         gap: 1.2rem;
         align-items: center;
         margin-top: 1rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
     }
 
     .social-media {
@@ -280,8 +281,8 @@ footer {
     }
 
     .hero img {
-        width: 100%;
-        /* margin: 0 auto; */
+        width: 96%;
+        border-radius: 1rem;
     }
 
     .episode-grid {
