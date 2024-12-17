@@ -43,6 +43,10 @@ header ul li a:hover {
     color: #ff5733;
 }
 
+header ul li a:focus {
+    color: yellow;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -58,26 +62,6 @@ nav img {
 
 nav li {
     text-align: center;
-}
-
-.social-media {
-    display: flex;
-    gap: 15px;
-    margin-right: 20px;
-    justify-content: center;
-}
-
-.social-media a {
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    align-items: center;
-    transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.social-media a:hover {
-    color: #ff5733;
-    transform: scale(1.2);
 }
 
 footer {
@@ -117,6 +101,10 @@ main p {
 
 .button:hover {
     background: #e76f51;
+}
+
+.button:focus {
+    background: yellow;
 }
 
 main video {
