@@ -230,6 +230,10 @@ main video {
         font-size: 1rem;
     }
 
+    .card {
+        width: 90%;
+    }
+
     .box {
         padding: 2rem;
         text-align: center;
